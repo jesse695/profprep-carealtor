@@ -300,6 +300,10 @@ textarea{resize:vertical;min-height:80px;line-height:1.6}
     </div>
     <div id="auth-msg" class="auth-msg"></div>
     <div class="auth-fine">Codes expire after 10 minutes.<br><br>Already purchased? Use the same email address you entered at checkout.</div>
+<div style="text-align:center;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.07)">
+  <span style="font-size:13px;color:rgba(255,255,255,.3)">Haven't purchased access yet?</span>
+  <a href="https://profprep.ai/realtor" style="display:inline-block;margin-top:.5rem;background:rgba(122,173,142,.1);border:1px solid rgba(122,173,142,.25);color:#7aad8e;font-size:13px;font-weight:600;padding:8px 20px;border-radius:6px;text-decoration:none">Get Access →</a>
+</div>
   </div>
 </div>
 
@@ -311,7 +315,7 @@ textarea{resize:vertical;min-height:80px;line-height:1.6}
       <div style="font-size:13px;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:1.25rem">Your email was not found or your access has expired.<br><br>Purchase access to get started.</div>
       <div style="font-family:monospace;font-size:36px;color:#C4622D;margin-bottom:.35rem">$79</div>
       <div style="font-size:11px;color:rgba(255,255,255,.25);margin-bottom:1.25rem">One-time &middot; 6 months full access</div>
-      <a href="https://buy.stripe.com/dRm5kw6abbp0bdm37Q6Na0Z" style="display:flex;align-items:center;justify-content:center;background:#C4622D;color:white;font-size:14px;font-weight:700;padding:13px;border-radius:8px;text-decoration:none;margin-bottom:.75rem">Get Access &rarr;</a>
+      <a href="https://buy.stripe.com/9B65kwdCDakW3KU0ZI6Na0q" style="display:flex;align-items:center;justify-content:center;background:#C4622D;color:white;font-size:14px;font-weight:700;padding:13px;border-radius:8px;text-decoration:none;margin-bottom:.75rem">Get Access &rarr;</a>
       <div style="font-size:11px;color:rgba(255,255,255,.2)">Use the same email at checkout that you sign in with.</div>
     </div>
     <button type="button" onclick="showAuth()" style="background:none;border:none;color:rgba(255,255,255,.25);font-size:12px;cursor:pointer">&larr; Use a different email</button>
@@ -323,15 +327,15 @@ textarea{resize:vertical;min-height:80px;line-height:1.6}
   <div class="modal">
     <div class="modal-title">Need more AI credits?</div>
     <div class="modal-sub" id="topup-msg">You've used your allocation. Top up to keep going.</div>
-    <a href="https://buy.stripe.com/3cI28k0PR2Su0yIbEm6Na12" class="topup-option">
+    <a href="https://buy.stripe.com/aFa7sE8ijdx895e7o66Na0F" class="topup-option">
       <div class="topup-left"><span class="topup-icon">⚡</span><div><div class="topup-name">5 Adaptive Exams</div><div class="topup-desc">AI-generated, targets your weak areas</div></div></div>
       <div class="topup-price">$4.99</div>
     </a>
-    <a href="https://buy.stripe.com/7sYfZaeGH1OqgxG9we6Na13" class="topup-option">
+    <a href="https://buy.stripe.com/dRm14g7ef50Cepy8sa6Na0G" class="topup-option">
       <div class="topup-left"><span class="topup-icon">🧠</span><div><div class="topup-name">10 Tutor Sessions</div><div class="topup-desc">Socratic reasoning, persistent context</div></div></div>
       <div class="topup-price">$2.99</div>
     </a>
-    <a href="https://buy.stripe.com/dRm5kw6abbp0bdm37Q6Na0Z" class="topup-option">
+    <a href="https://buy.stripe.com/9B65kwdCDakW3KU0ZI6Na0q" class="topup-option">
       <div class="topup-left"><span class="topup-icon">🏡</span><div><div class="topup-name">3 Simulator Runs</div><div class="topup-desc">Full transaction, all 7 stages</div></div></div>
       <div class="topup-price">$3.99</div>
     </a>
@@ -403,7 +407,7 @@ textarea{resize:vertical;min-height:80px;line-height:1.6}
           <div id="topic-bars-national"><div class="empty" style="padding:1rem"><p>Complete practice questions to see performance.</p></div></div>
         </div>
         <div class="topic-bars-wrap" style="margin-bottom:0;border-color:rgba(196,98,45,.2)">
-          <div class="tbl" style="color:var(--terra)">CA Portion — 40 Questions</div>
+          <div class="tbl" style="color:var(--terra)">National Portion — 30 Questions</div>
           <div id="topic-bars-ca"><div class="empty" style="padding:1rem"><p>Complete California questions to see performance.</p></div></div>
         </div>
       </div>
@@ -461,7 +465,7 @@ textarea{resize:vertical;min-height:80px;line-height:1.6}
       <div class="card" id="exam-config-panel">
         <div class="fr">
           <div class="fg" style="margin-bottom:0"><label>Exam Mode</label><select id="exam-mode" onchange="updateExamMode()"><option value="static">Static Practice — Unlimited</option><option value="adaptive">Adaptive AI Exam — Uses Allocation</option></select></div>
-          <div class="fg" style="margin-bottom:0"><label>Section</label><select id="exam-section"><option value="mixed">Mixed — National + California</option><option value="national">National Portion Only</option><option value="oklahoma">California Portion Only</option></select></div>
+          <div class="fg" style="margin-bottom:0"><label>Section</label><select id="exam-section"><option value="mixed">Mixed — National + California</option><option value="national">National Portion Only</option><option value="ca">National Portion Only</option></select></div>
         </div>
         <div class="fg"><label>Topic</label><div class="pills" id="exam-pills"></div></div>
         <div class="fr">
@@ -504,7 +508,7 @@ textarea{resize:vertical;min-height:80px;line-height:1.6}
       <div class="sh"><div><div class="sec-title">Vocabulary Engine</div><div class="sec-sub">Terms, confusion pairs, applied usage, and memory hooks — always unlimited</div></div></div>
       <div class="card">
         <div class="fr">
-          <div class="fg" style="margin-bottom:0"><label>Category</label><select id="vocab-category" onchange="loadVocabCategory()"><option value="general">General Real Estate Terms</option><option value="contracts">Contracts &amp; Agreements</option><option value="financing">Financing &amp; Mortgages</option><option value="title">Title &amp; Ownership</option><option value="agency">Agency &amp; Representation</option><option value="oklahoma">California-Specific Terms</option><option value="confusion">Confusion Pairs</option></select></div>
+          <div class="fg" style="margin-bottom:0"><label>Category</label><select id="vocab-category" onchange="loadVocabCategory()"><option value="general">General Real Estate Terms</option><option value="contracts">Contracts &amp; Agreements</option><option value="financing">Financing &amp; Mortgages</option><option value="title">Title &amp; Ownership</option><option value="agency">Agency &amp; Representation</option><option value="ca">California-Specific Terms</option><option value="confusion">Confusion Pairs</option></select></div>
           <div class="fg" style="margin-bottom:0"><label>Mode</label><select id="vocab-mode"><option value="flashcard">Flashcard — Reveal &amp; Rate</option></select></div>
         </div>
         <div style="display:flex;gap:7px">
@@ -517,7 +521,7 @@ textarea{resize:vertical;min-height:80px;line-height:1.6}
 
     <!-- QUICK REFERENCE -->
     <div class="panel" id="panel-ref">
-      <div class="sh"><div><div class="sec-title">Quick Reference</div><div class="sec-sub">PSI Exams exam structure, domain weights, formulas, and California law essentials</div></div></div>
+      <div class="sh"><div><div class="sec-title">Quick Reference</div><div class="sec-sub">PSI exam structure, domain weights, formulas, and California law essentials</div></div></div>
       <div class="ref-grid" id="ref-grid"></div>
     </div>
 
@@ -541,14 +545,14 @@ textarea{resize:vertical;min-height:80px;line-height:1.6}
 <div class="pb-toast" id="pb-toast">🏆 New Personal Best!</div>
 
 <script>
-const EXAM_TYPE = 'ca_realtor';
+const EXAM_TYPE = 'realtor';
 const ALLOC = { guide:10, tutor:75, adaptive_exam:25, sim:10 };
 
 // Fallback config if get_config fails
 const FALLBACK_CONFIG = {
   topics: { national: ['Property Ownership','Agency Relationships','Contracts','Financing','Fair Housing','Real Estate Math','Transfer of Title','Appraisal'], state: ['DRE Rules & License Law','Disclosure Act','Trust Accounts','Advertising Rules','License Renewal & CE'] },
-  tutor_prompts: {"agency": "Help me understand the Disclosure Regarding Real Estate Agency Relationships in California.", "contracts": "What are the required disclosures in a California real estate purchase agreement?", "disclosure": "Walk me through California TDS, NHD, and other required seller disclosures.", "dre": "What are the most important DRE regulations for the California exam?", "financing": "Explain California-specific financing rules including due-on-sale and assumption.", "math": "Help me understand California documentary transfer tax calculations.", "fairhousing": "Walk me through FEHA and how it extends beyond federal Fair Housing protections."},
-  statute_lookups: [{"label": "TDS Requirements", "query": "California Transfer Disclosure Statement requirements real estate"}, {"label": "Agency Disclosure", "query": "California agency disclosure requirement real estate licensee"}, {"label": "NHD Disclosure", "query": "California Natural Hazard Disclosure Statement requirements"}, {"label": "B&P Code License", "query": "California Business and Professions Code real estate license law"}, {"label": "FEHA Fair Housing", "query": "California FEHA fair housing protections real estate"}],
+  tutor_prompts: { agency: "Help me understand agency relationships in California.", contracts: "What makes a real estate contract valid in California?", disclosure: "Walk me through California's disclosure requirements.", ca: "What are the most important DRE rules for the exam?", financing: "Explain mortgage types — conventional vs FHA vs VA.", math: "Help me understand proration calculations.", fairhousing: "Walk me through the Fair Housing Act." },
+  statute_lookups: [{ label:'Disclosure Act', query:'California Residential Property Condition Disclosure Act' },{ label:'Trust Accounts', query:'DRE trust account requirements California' },{ label:'Dual Agency', query:'California dual agency consent requirements DRE' },{ label:'Advertising Rules', query:'DRE advertising rules California' },{ label:'License Renewal', query:'California real estate license renewal CE requirements' }],
   simulator: { stage_names: ['Client & Agency','Listing/Agreement','Disclosure','Offer & Negotiation','Under Contract','Closing','Post-Closing'], transaction_types: [{value:'standard',label:"Standard Sale — Buyer's Agent"},{value:'listing',label:'Standard Sale — Listing Agent'},{value:'dual',label:'Dual Agency Scenario'},{value:'distressed',label:'Distressed / Short Sale'},{value:'new_construction',label:'New Construction'}], complications: [{value:'standard',label:'Standard — No major complications'},{value:'disclosure',label:'Disclosure Issue'},{value:'appraisal',label:'Low Appraisal'},{value:'title',label:'Title Defect'},{value:'financing',label:'Financing Falls Through'},{value:'random',label:'Surprise Me'}] },
   vocab: { general:[], contracts:[], financing:[], title:[], agency:[], ca:[], confusion:[] },
   quick_ref: { categories:[] }
@@ -782,7 +786,7 @@ async function startExam(){
   document.getElementById('score-disp').style.display='none';
   const container=document.getElementById('exam-container');showLoading(container);
   document.getElementById('exam-area').style.display='block';document.getElementById('exam-config-panel').style.display='none';document.getElementById('exam-progress').style.width='0%';
-  const sMap={national:'National portion only — property ownership, agency, contracts, financing, fair housing, math, appraisal.',oklahoma:'California state portion only — DRE rules, California license law, disclosure requirements, trust accounts, advertising rules.',mixed:'Mix of national and California content. Flag California questions with section:"California".'};
+  const sMap={national:'National portion only — property ownership, agency, contracts, financing, fair housing, math, appraisal.',ca:'California state portion only — DRE rules, California license law, disclosure requirements, trust accounts, advertising rules.',mixed:'Mix of national and California content. Flag California questions with section:"California".'};
   const tMap={mixed:'mixed question styles',mcq:'standard multiple choice',scenario:'scenario-based situational questions'};
   const adaptNote=mode==='adaptive'?' ADAPTIVE MODE: target weak areas. Vary difficulty, focus on application over recall.':'';
   const sys='You are an expert California Real Estate PSI exam question writer. Return ONLY valid JSON, no markdown. Format: {"questions":[{"id":1,"section":"National","topic":"Agency","stem":"...","options":["A. ...","B. ...","C. ...","D. ..."],"correct":0,"rationale":"Full explanation.","ok_law_note":"Specific DRE rule if applicable — omit if not"}]}. correct is 0-indexed.';
